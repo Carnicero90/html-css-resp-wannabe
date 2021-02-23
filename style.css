@@ -116,7 +116,7 @@ img {
     #lezioni .row .left,
     #lezioni .row .right {
         width: 90%;
-        margin: 3% auto;
+        margin: 3% 5%;
     }
 
     .row {
