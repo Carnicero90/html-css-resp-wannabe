@@ -72,9 +72,9 @@ img {
     clear: both;
 }
 
-/* Screen<480 */
+/*  */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
 
     /* RESET */
     * {
