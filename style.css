@@ -87,6 +87,7 @@ img {
     body {
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
         color: white;
+        font-size: 6vw;
 
     }
 
@@ -120,27 +121,30 @@ img {
 
     .row {
         width: 100%;
-        margin: 10px auto;
+        margin: 3vh auto;
     }
 
     /* Common text */
     h1 {
-        font-size: 1.5em;
+        font-size: 200%;
 
+    }
+
+    h3 {
+        font-size: 130%;
     }
 
     h1,
     h3 {
         text-transform: uppercase;
         text-shadow: 1px 1px rgb(156, 168, 201);
-        /* inguardabile, per ora la lascio */
     }
 
     #lezioni h1,
     #why h1 {
         background-color: rgb(255, 115, 0);
         padding: 10vh 0;
-        font-size: 7vh;
+        font-size: 300%;
     }
 
 
@@ -149,7 +153,7 @@ img {
     #why .row>div {
         background-color: rgb(89, 158, 228);
         border-radius: 3%;
-        padding: 10px;
+        padding: 5%;
     }
 
     /* /COMMON */
@@ -163,13 +167,12 @@ img {
     }
 
     #steps {
-        /* width: 90%; */
         text-align: left;
 
     }
 
     /* Steps */
-    #steps h3::before {
+    /* #steps h3::before {
         background-color: white;
         vertical-align: middle;
         margin-right: 5%;
@@ -178,7 +181,7 @@ img {
         width: 2em;
         text-align: center;
         border-radius: 50%;
-    }
+    } */
 
     /* #steps .left h3::before {
         content: url('https://api.iconify.design/et-magnifying-glass.svg');
