@@ -1,0 +1,203 @@
+.row {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+    width: 50%;
+    float: left;
+}
+
+#lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#lezioni {
+    text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+    float: left;
+    width: 33%;
+}
+
+#steps {
+    text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+    text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
+}
+
+/* COMMON */
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container.grey {
+    background-color: #f9f9f9;
+}
+
+img {
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    /* RESET */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* COMMON */
+    body {
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        color: white;
+
+    }
+
+    body,
+    .container.grey {
+        background-color: rgb(112, 216, 181);
+
+    }
+
+    img {
+        height: 80px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #why .row>.first,
+    #why .row>.second,
+    #why .row>.third,
+    #steps,
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right,
+    #lezioni .row .left,
+    #lezioni .row .right {
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    .row {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* Common text */
+    h1 {
+        font-size: 1.5em;
+
+    }
+
+    h1,
+    h3 {
+        text-transform: uppercase;
+        text-shadow: 1px 1px rgb(156, 168, 201);
+        /* inguardabile, per ora la lascio */
+    }
+
+    #lezioni h1,
+    #why h1 {
+        background-color: rgb(255, 115, 0);
+        padding: 10vh 0;
+        font-size: 7vh;
+    }
+
+
+
+    #steps,
+    #why .row>div {
+        background-color: rgb(89, 158, 228);
+        border-radius: 3%;
+        padding: 10px;
+    }
+
+    /* /COMMON */
+
+    /* MAIN */
+
+    #steps img {
+        display: none;
+    }
+
+    #steps {
+        /* width: 90%; */
+        text-align: left;
+
+    }
+
+    /* Steps */
+    #steps h3::before {
+        background-color: white;
+        vertical-align: middle;
+        margin-right: 5%;
+        display: inline-block;
+        line-height: 2em;
+        width: 2em;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    #steps .left h3::before {
+        content: url('https://api.iconify.design/et-magnifying-glass.svg');
+
+    }
+
+    #steps .central h3::before {
+        content: url('https://api.iconify.design/fluent:mail-16-filled.svg');
+    }
+
+    #steps .right h3::before {
+        content: url('https://api.iconify.design/mdi:guitar-acoustic.svg');
+    }
+
+    /* /Steps */
+
+    /* Why */
+    #why .row img {
+        float: left;
+        background-color: transparent;
+        padding: 3%;
+    }
+
+    /* /Why */
+    /* /MAIN */
+}
