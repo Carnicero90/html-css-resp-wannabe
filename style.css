@@ -152,9 +152,11 @@ img {
     #steps,
     #why .row>div {
         background-color: rgb(89, 158, 228);
-        border-radius: 30px;
         padding: 5%;
+        border-radius: 20px;
+
     }
+
 
     /* /COMMON */
 
@@ -203,6 +205,12 @@ img {
         float: left;
         background-color: transparent;
         padding: 3%;
+    }
+
+    .row>div {
+        content: "";
+        display: table;
+        clear: both;
     }
 
     /* /Why */
