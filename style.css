@@ -156,16 +156,10 @@ img {
 
     /* MAIN */
 
-    #steps .row .left {
-        display: none;
-    }
-
-    #steps .row .left h3 {
-        display: list-item;
-    }
-
     #steps img {
-        display: none;
+        /* display: none; */
+        width: 20%;
+        height: auto;
     }
 
     #steps {
@@ -186,7 +180,7 @@ img {
         border-radius: 50%;
     }
 
-    #steps .left h3::before {
+    /* #steps .left h3::before {
         content: url('https://api.iconify.design/et-magnifying-glass.svg');
 
     }
@@ -197,7 +191,7 @@ img {
 
     #steps .right h3::before {
         content: url('https://api.iconify.design/mdi:guitar-acoustic.svg');
-    }
+    } */
 
     /* /Steps */
 
