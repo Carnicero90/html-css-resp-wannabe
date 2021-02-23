@@ -152,7 +152,7 @@ img {
     #steps,
     #why .row>div {
         background-color: rgb(89, 158, 228);
-        border-radius: 3%;
+        border-radius: 30px;
         padding: 5%;
     }
 
