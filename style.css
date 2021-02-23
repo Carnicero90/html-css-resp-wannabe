@@ -72,8 +72,9 @@ img {
     clear: both;
 }
 
+/* Screen<480 */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
 
     /* RESET */
     * {
@@ -102,6 +103,7 @@ img {
     hr {
         display: none;
     }
+
 
     #why .row>.first,
     #why .row>.second,
@@ -153,6 +155,14 @@ img {
     /* /COMMON */
 
     /* MAIN */
+
+    #steps .row .left {
+        display: none;
+    }
+
+    #steps .row .left h3 {
+        display: list-item;
+    }
 
     #steps img {
         display: none;
